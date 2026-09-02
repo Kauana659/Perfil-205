@@ -439,12 +439,11 @@
 
     #contato-section { background: var(--cream); }
     .contato-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
       margin-top: 2rem;
     }
-    @media (max-width: 800px) { .contato-grid { grid-template-columns: 1fr; } }
     .contato-card {
       background: var(--white);
       border: 1px solid var(--border);
